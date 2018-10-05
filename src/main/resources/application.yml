@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: elastic-search-demo
+
+config:
+  elasticsearch:
+    host: "localhost"
+    port: 9300
+    clustername: "elasticsearch"
