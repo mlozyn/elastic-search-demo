@@ -3,6 +3,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
+    - echo Verifying is docker daemon running...
+    - docker version
     - echo Logging in to Amazon ECR...
     - aws --version
     - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
