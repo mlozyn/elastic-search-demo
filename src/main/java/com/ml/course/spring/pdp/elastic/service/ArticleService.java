@@ -43,8 +43,8 @@ public class ArticleService {
 //        return convert(document.get());
 
         final ArticleDocument document = new ArticleDocument();
-        document.setId("111");
-        document.setTitle("Test title");
+        document.setId(id);
+        document.setTitle(String.format("Test title: %s", id));
 
         return convert(document);
     }
